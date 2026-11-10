@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Descubre citas, perros, gatos y datos curiosos con cuatro APIs públicas.">
+  <title>Explorador de contenido aleatorio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/explorador.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-icon" aria-hidden="true">✳</span> EXPLORA<span class="brand-dot">.</span></a><span class="course">PROGRAMACIÓN WEB III <span>/</span> PRÁCTICA DE APIs</span></header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow"><span></span> UN CLIC, UN DESCUBRIMIENTO</p>
+      <h1 id="page-title">Explorador de<br>contenido <em>aleatorio.</em></h1>
+      <p class="description">Una idea para pensar. Un compañero de cuatro patas.<br>Algo que no sabías. Deja que el azar te sorprenda.</p>
+      <div class="intro-note"><span aria-hidden="true">↘</span> Cuatro fuentes. Infinitas posibilidades.</div>
+    </section>
+    <section class="grid" aria-label="Contenido de las cuatro APIs">
+      <article class="card quote-card" id="cita" aria-labelledby="titulo-cita">
+        <header class="card-heading"><h2 id="titulo-cita"><span aria-hidden="true">❝</span> Citas y autores</h2><span class="number">01</span></header>
+        <div class="content quote-content"><span class="large-quote" aria-hidden="true">“</span><blockquote><p id="cita-texto" lang="en"></p><footer id="cita-autor"></footer></blockquote></div>
+        <div class="card-bottom"><p class="status" role="status" aria-live="polite"></p><button type="button">Obtener otra cita <span aria-hidden="true">↗</span></button><a class="source" href="https://dummyjson.com/docs/quotes" target="_blank" rel="noopener noreferrer">DUMMYJSON <span>↗</span></a></div>
+      </article>
+      <article class="card" id="perro" aria-labelledby="titulo-perro">
+        <header class="card-heading"><h2 id="titulo-perro"><span aria-hidden="true">♧</span> Un poco de perros</h2><span class="number">02</span></header>
+        <div class="content image-content"><img id="perro-imagen" alt="Perro seleccionado aleatoriamente por Dog CEO" hidden><span class="image-placeholder">Tu próximo compañero está por aparecer.</span><span class="image-label">MODO: MEJOR AMIGO</span></div>
+        <div class="card-bottom"><p class="status" role="status" aria-live="polite"></p><button type="button">Mostrar otro perro <span aria-hidden="true">↗</span></button><a class="source" href="https://dog.ceo/dog-api/documentation/random" target="_blank" rel="noopener noreferrer">DOG CEO <span>↗</span></a></div>
+      </article>
+      <article class="card" id="gato" aria-labelledby="titulo-gato">
+        <header class="card-heading"><h2 id="titulo-gato"><span aria-hidden="true">♧</span> Un poco de gatos</h2><span class="number">03</span></header>
+        <div class="content image-content"><img id="gato-imagen" alt="Gato seleccionado aleatoriamente por CATAAS" hidden><span class="image-placeholder">Una pequeña dosis de curiosidad felina.</span><span class="image-label">MODO: INDEPENDIENTE</span></div>
+        <div class="card-bottom"><p class="status" role="status" aria-live="polite"></p><button type="button">Mostrar otro gato <span aria-hidden="true">↗</span></button><a class="source" href="https://cataas.com/" target="_blank" rel="noopener noreferrer">CATAAS <span>↗</span></a></div>
+      </article>
+      <article class="card fact-card" id="dato" aria-labelledby="titulo-dato">
+        <header class="card-heading"><h2 id="titulo-dato"><span aria-hidden="true">✧</span> ¿Sabías que…?</h2><span class="number">04</span></header>
+        <div class="content fact-content"><span class="fact-label">UN DATO FUERA DE LO COMÚN</span><p id="dato-texto" lang="en"></p><span class="fact-decoration" aria-hidden="true">✳</span></div>
+        <div class="card-bottom"><p class="status" role="status" aria-live="polite"></p><button type="button">Mostrar otro dato <span aria-hidden="true">↗</span></button><a class="source" href="https://uselessfacts.jsph.pl/" target="_blank" rel="noopener noreferrer">USELESS FACTS <span>↗</span></a></div>
+      </article>
+    </section>
+    <p class="page-note">El azar a veces se repite. Cada botón hace una nueva consulta.</p>
+  </main>
+  <footer class="site-footer"><span>HECHO CON CURIOSIDAD <span aria-hidden="true">✳</span></span><span>Jorge Luis Herbas Mallcu · Programación Web III</span><span>HTML / CSS / JAVASCRIPT</span></footer>
+</body>
+</html>
